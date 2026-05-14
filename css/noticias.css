@@ -6,8 +6,9 @@
  
 :root{
     --primary-color: rgb(37, 25, 144);
-    --segundary-color:rgb(55, 226, 3);
+    --segundary-color:rgb(13, 255, 61);
     --text-color:rgb(255, 255, 255);
+    --terciary-color: rgb(255, 0, 0);
 }
 header {
     display: flex;
@@ -47,4 +48,50 @@ section.noticias .noticia img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+section.noticias .noticia h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section.noticias .noticia p {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.botao-tema {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: var(--terciary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: larger;
+    cursor: pointer;
+}
+
+footer p {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.escuro {
+    --primary-color: rgb(0, 0, 0);
+    --segundary-color: rgb(0, 0, 0);
+    --text-color: rgb(255, 255, 255);
+    --terciary-color: rgb(97, 0, 0);
 }
