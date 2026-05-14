@@ -10,3 +10,15 @@ function alterar_tema() {
         body.classList.add("escuro");
     }
 }
+
+function abrir_lightbox(element) {
+    var lightbox = document.getElementById("lightbox");
+    var lightboxImg = document.getElementById("lightbox-img");
+    
+    lightbox.style.display = "block";
+    lightboxImg.src = element.src;
+}
+
+function fechar_lightbox() {
+    document.getElementById("lightbox").style.display = "none";
+}

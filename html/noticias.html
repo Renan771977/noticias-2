@@ -18,23 +18,27 @@
     <main>
         <section class="noticias">
             <article class="noticia">
-                <img src="../img/news.png" alt="Notícia">
+                <img src="../img/news.png" alt="Notícia" onclick="abrir_lightbox(this)">
                 <h2>Notícia 1</h2>
                 <p>Descrição da notícia 1.</p>
                 <a href="#">Ler mais</a>
             </article>
             <article class="noticia">
-                <img src="../img/news.png" alt="Notícia">
+                <img src="../img/news.png" alt="Notícia" onclick="abrir_lightbox(this)">
                 <h2>Notícia 2</h2>
                 <p>Descrição da notícia 2.</p>
                 <a href="#">Ler mais</a>
             </article>
             <article class="noticia">
-                <img src="../img/news.png" alt="Notícia">
+                <img src="../img/news.png" alt="Notícia" onclick="abrir_lightbox(this)">
                 <h2>Notícia 3</h2>
                 <p>Descrição da notícia 3.</p>
                 <a href="#">Ler mais</a>
             </article>
+            <div class="light" id="lightbox" onclick="fechar_lightbox()">
+            </div>
+            <span class="fechar">&times;</span>
+            <img src="" alt="" class="lightbox-img" id="lightbox-img">
         </section>
     </main>
     <footer>
