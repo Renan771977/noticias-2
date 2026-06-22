@@ -1,4 +1,4 @@
-import input from "../backend/input.js";
+import input from "../js/input.js";
 
 var num = Number(await input("Digite um numero: "));
 
