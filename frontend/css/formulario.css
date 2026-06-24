@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(37, 25, 144);
+    --secondary-color: rgb(76, 0, 255);
+    --text-color: rgb(255, 255, 255);
+    --terciary-color: rgb(255, 0, 0);
+}
+
+.escuro {
+    --primary-color: rgb(0, 0, 0);
+    --segundary-color: rgb(0, 0, 0);
+    --text-color: rgb(255, 255, 255);
+    --terciary-color: rgb(97, 0, 0);
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    margin: 15px 10px;
+    border: 3px solid var(--text-color);
+    border-radius: 10px;
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--primary-color);
+}
+
+header button {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+    border: 2px solid var(--text-color);
+    background-color: var(--primary-color);
+    color: var(--text-color);
+
+    border-radius: 10px;
+    padding: 1vw;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header button:hover {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+header img {
+    width: 20vw;
+}
+
+header h1 {
+    font-size: 5vw;
+}
+
+nav {
+    margin: 15px 10px;
+    border: 3px solid var(--text-color);
+    border-radius: 10px;
+    background-color: var(--primary-color);
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    padding: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    border-color: var(--text-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+nav a:active {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+}
+
+.formulario {
+    width: 90%;
+    max-width: 700px;
+
+    margin: 20px auto;
+    padding: 20px;
+
+    border: 3px solid var(--text-color);
+    border-radius: 10px;
+
+    background-color: var(--primary-color);
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 10px;
+
+    border: 2px solid var(--text-color);
+    border-radius: 5px;
+
+    background-color: white;
+}
+
+form button {
+    margin-top: 10px;
+
+    padding: 12px;
+
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
+
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    opacity: 0.9;
+}
+
+#mensagem {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
