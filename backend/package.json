@@ -12,6 +12,8 @@
   "type": "module",
   "description": "",
   "dependencies": {
-    "express": "^5.2.1"
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "mysql2": "^3.10.1"
   }
 }
