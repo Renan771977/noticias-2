@@ -25,6 +25,16 @@ app.post('/noticias', async (req, res) => {
     }
 });
 
+app.get('/noticias', async (req, res) => {
+    try {
+        const sql = 'SELECT * FROM noticias';
+        const resultado = await db.executarQuery(sql);
+        res.status(200).json(resultado[0]);
+    } catch (erro) {
+        res.status(500).json({ erro: "Erro ao buscar notícias" });
+    }
+});
+
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}`);

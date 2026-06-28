@@ -24,7 +24,7 @@ async function cadastrar_noticia(event) {
     mensagem.innerHTML = "Cadastrando notícia...";
 
     try {
-        var resposta = await fetch("https://noticias-backend-tares.up.railway.app/noticias",
+        var resposta = await fetch("https://noticias-2-production.up.railway.app/noticias",
             {
                 method: "POST",
                 headers: {
@@ -33,7 +33,7 @@ async function cadastrar_noticia(event) {
                 body: JSON.stringify({
                     titulo: titulo,
                     conteudo: conteudo,
-                    imagem: imagem,
+                    imagem: imagem, 
                     link: link
                 })
             }
@@ -43,7 +43,6 @@ async function cadastrar_noticia(event) {
 
         if (resultado.insertId) {
             mensagem.innerHTML = `Notícia cadastrada com sucesso! ID: ${resultado.insertId}`;
-
             document.querySelector("form").reset();
         }
         else {
