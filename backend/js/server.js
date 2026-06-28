@@ -11,8 +11,8 @@ app.post('/noticias', async (req, res) => {
     try {
         const { titulo, conteudo, imagem, link } = req.body;
 
-        const sql = 'INSERT INTO noticias (titulo, conteudo, imagem, link) VALUES (?, ?, ?, ?)';
-        
+        const sql = 'INSERT INTO noticias (titulo, conteudo, caminhoImagem, link) VALUES (?, ?, ?, ?)';
+
         const resultado = await db.executarQuery(sql, [titulo, conteudo, imagem, link]);
 
         const idInserido = resultado[0].insertId;
